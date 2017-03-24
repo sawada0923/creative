@@ -1,0 +1,154 @@
+@charset "utf-8";
+/*--------------------------------------
+	全称
+--------------------------------------*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+
+/*--------------------------------------
+	html,body
+--------------------------------------*/
+html {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+body {
+	line-height: 1;
+}
+/*--------------------------------------
+	文字関連
+--------------------------------------*/
+h1,h2,h3,h4,h5,h6,div,img,a,p,span,strong,em,address,iframe,
+header,footer,section,article,nav,aside,figure,figcaption,
+ol,ul,li,dl,dt,dd,table,tr,th,td {
+	font-size: 100%;
+	font-weight: normal;
+	font-style: normal;
+	vertical-align: baseline;
+	word-wrap: break-word;
+	word-break: break-all;
+	text-size-adjust: 100%;
+}
+/*--------------------------------------
+	HTML5要素のdisplay化
+--------------------------------------*/
+header,footer,main,section,article,aside,nav,figcaption,figure {
+	display: block;
+}
+/*--------------------------------------
+	imgタグ関連
+--------------------------------------*/
+img {
+	vertical-align: bottom;
+}
+/*--------------------------------------
+	aタグ関連
+--------------------------------------*/
+a,a:link,a:visited,a:hover,a:active {
+/*	text-decoration: none;*/
+	-webkit-text-decoration-skip: objects;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-backface-visibility: hidden; /* Chromeで1pxずれるバグ対策	*/
+	backface-visibility: hidden; /* Chromeで1pxずれるバグ対策	*/
+}
+/*--------------------------------------
+	表,リスト関連
+--------------------------------------*/
+ol, ul {
+	list-style: none;
+	list-style-type: none;
+}
+table,tr,th,td {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------------------
+	フォームタグ関連
+--------------------------------------*/
+input,button,textarea,select {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	padding: 0;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 0;
+	overflow: visible;
+	text-transform: none;
+}
+/*--------------------------------------
+	normalize 改良圧縮
+--------------------------------------*/
+audio,video {
+	display: inline-block;
+}
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+svg:not(:root) {
+	overflow: hidden;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+	border-style: none;
+	padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+	outline: 1px dotted ButtonText;
+}
+legend {
+	box-sizing: border-box;
+	max-width: 100%;
+	padding: 0;
+	white-space: normal;
+}
+progress {
+	display: inline-block;
+	vertical-align: baseline;
+}
+textarea {
+	overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+	padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+	-webkit-appearance: button;
+	font: inherit;
+}
+[hidden] {
+	display: none;
+}
